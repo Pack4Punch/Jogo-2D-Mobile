@@ -3,14 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    public string levelname;
+    public string levelName;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player colidiu com o teleporte");
-            SceneManager.LoadScene(levelname);
+            SceneManager.LoadScene(levelName);
         }
     }
 }
